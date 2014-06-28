@@ -11,7 +11,7 @@ To install the library :
     make microhttpd_install
     make run_main
 
-Go to localhost:9090 [localhost:9090](http://localhost:9090)
+Go to [localhost:9090](http://localhost:9090)
 
 # DEPENDENCIES
  - autoconf
