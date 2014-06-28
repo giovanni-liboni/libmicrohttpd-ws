@@ -1,0 +1,12 @@
+build
+CMakeFiles
+Libmicrohttpd.config
+Libmicrohttpd.creator
+Libmicrohttpd.files
+Libmicrohttpd.includes
+.project
+.cproject
+cmake_install.cmake
+CMakeCache.txt
+**~
+**Makefile
