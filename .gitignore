@@ -4,6 +4,7 @@ Libmicrohttpd.config
 Libmicrohttpd.creator
 Libmicrohttpd.files
 Libmicrohttpd.includes
+Libmicrohttpd.creator.user
 .project
 .cproject
 cmake_install.cmake
