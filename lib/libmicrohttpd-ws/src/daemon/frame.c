@@ -1,36 +1,15 @@
 /*
-     This file is part of libmicrohttpd
-     (C) 2013 2014 2015 2016 Giovanni Liboni
-
-     This library is free software; you can redistribute it and/or
-     modify it under the terms of the GNU Lesser General Public
-     License as published by the Free Software Foundation; either
-     version 2.1 of the License, or (at your option) any later version.
-
-     This library is distributed in the hope that it will be useful,
-     but WITHOUT ANY WARRANTY; without even the implied warranty of
-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-     Lesser General Public License for more details.
-
-     You should have received a copy of the GNU Lesser General Public
-     License along with this library; if not, write to the Free Software
-     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ * Copyright 2016 Giovanni Liboni part of libmicrohttpd-ws
+ *
+ * This source file is free software, under either the GPLv2 or the Apachev2 licence, available at:
+ *   https://opensource.org/licenses/GPL-2.0
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This source file is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the referenced license files for details.
  */
- /*
- 		Copyright 2016 Giovanni Liboni
 
- 		Licensed under the Apache License, Version 2.0 (the "License");
- 		you may not use this file except in compliance with the License.
- 		You may obtain a copy of the License at
-
- 				http://www.apache.org/licenses/LICENSE-2.0
-
- 		Unless required by applicable law or agreed to in writing, software
- 		distributed under the License is distributed on an "AS IS" BASIS,
- 		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- 		See the License for the specific language governing permissions and
- 		limitations under the License.
-  */
 /*
 * @file frame.c
 * @author Giovanni Liboni
