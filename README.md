@@ -41,7 +41,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -143,5 +142,5 @@ Project Link: [https://github.com/giovanni-liboni/libmicrohttpd-ws](https://gith
 [issues-shield]: https://img.shields.io/github/issues/giovanni-liboni/libmicrohttpd-ws.svg?style=for-the-badge
 [issues-url]: https://github.com/giovanni-liboni/libmicrohttpd-ws/issues
 [license-shield]: https://img.shields.io/github/license/giovanni-liboni/libmicrohttpd-ws.svg?style=for-the-badge
-[license-url]: https://github.com/giovanni-liboni/libmicrohttpd-ws/blob/master/LICENSE.txt
+[license-url]: https://github.com/giovanni-liboni/libmicrohttpd-ws/blob/master/LICENSE.LGPL
 
