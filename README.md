@@ -115,7 +115,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-Distributed under the LGPLv3. See `LICENSE` for more information.
+Distributed under the LGPLv2.1. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
@@ -142,5 +142,5 @@ Project Link: [https://github.com/giovanni-liboni/libmicrohttpd-ws](https://gith
 [issues-shield]: https://img.shields.io/github/issues/giovanni-liboni/libmicrohttpd-ws.svg?style=for-the-badge
 [issues-url]: https://github.com/giovanni-liboni/libmicrohttpd-ws/issues
 [license-shield]: https://img.shields.io/github/license/giovanni-liboni/libmicrohttpd-ws.svg?style=for-the-badge
-[license-url]: https://github.com/giovanni-liboni/libmicrohttpd-ws/blob/master/LICENSE.LGPL
+[license-url]: https://github.com/giovanni-liboni/libmicrohttpd-ws/blob/master/LICENSE
 
