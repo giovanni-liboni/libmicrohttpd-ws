@@ -260,8 +260,9 @@ int handleFileGet( char * c,
 
 	free( filename );
 	return ret;
-}int
-main (int argc, char *const *argv)
+}
+
+int main (int argc, char *const *argv)
 {
 	if (getcwd(PATH, sizeof(PATH)) == NULL)
 		perror("getcwd() error");

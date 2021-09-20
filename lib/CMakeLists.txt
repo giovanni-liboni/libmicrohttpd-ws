@@ -29,28 +29,8 @@ add_custom_target(microhttpd_install
       ${CD} ${microhttpd_dir}
       make install
 )
-#############################
-####### LIBWEBSOCKETS #######
-#############################
-
-set(websockets_source_dir "${CMAKE_CURRENT_SOURCE_DIR}/libwebsockets")
-set(websockets_dir ${CMAKE_CURRENT_BINARY_DIR}/libwebsockets)
-set(websockets_dir ${websockets_dir} PARENT_SCOPE)
-
-add_custom_target(websockets_install
-    COMMAND
-      ${MKDIR} ${websockets_dir}
-    COMMAND
-      ${CD} ${websockets_dir}
-      ${CMAKE_COMMAND} ${websockets_source_dir} -DCMAKE_INSTALL_PREFIX:PATH=${websockets_dir}
-    COMMAND
-      ${CD} ${websockets_dir}
-      make -j4
-)
-
 
 add_custom_target( install_libs )
 add_dependencies(install_libs
   microhttpd_install
-  websockets_install
 )
