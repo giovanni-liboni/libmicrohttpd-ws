@@ -65,24 +65,23 @@ To get a local copy up and running follow these simple example steps.
 
 Let's install the dependencies, tested on Ubuntu 18.04:
 
-*Ubuntu 18.04
+* Ubuntu 18.04
   ```sh
   sudo apt-get install cmake autoconf automake libtool libgcrypt11-dev libcurl4-gnutls-dev
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Create the build directory and move in
+1. Create the build directory and move in
    ```sh
    mkdir build
    cd build
    ```
-3. Initialize the project
+2. Initialize the project
    ```sh
    cmake ..
    ```
-4. Compile the libmicrohttpd library
+3. Compile the libmicrohttpd library
    ```sh
    make microhttpd_install
    ```
