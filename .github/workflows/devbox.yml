@@ -24,16 +24,14 @@ jobs:
       - name: report tool versions
         run: |
           set -euo pipefail
-          devbox run -- bash -c '
-            cmake      --version | head -n 1
-            make       --version | head -n 1
-            autoconf   --version | head -n 1
-            automake   --version | head -n 1
-            libtool    --version | head -n 1
-            pkg-config --version
-            gcc        --version | head -n 1
-            python3    --version
-          '
+          devbox run -- cmake      --version | head -n 1
+          devbox run -- make       --version | head -n 1
+          devbox run -- autoconf   --version | head -n 1
+          devbox run -- automake   --version | head -n 1
+          devbox run -- libtool    --version | head -n 1
+          devbox run -- pkg-config --version
+          devbox run -- gcc        --version | head -n 1
+          devbox run -- python3    --version
 
       - name: assert lockfile is up to date
         run: |
