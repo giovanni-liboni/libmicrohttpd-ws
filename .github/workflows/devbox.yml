@@ -25,13 +25,13 @@ jobs:
         run: |
           set -euo pipefail
           devbox run -- bash -c '
-            cmake      --version | head -1
-            make       --version | head -1
-            autoconf   --version | head -1
-            automake   --version | head -1
-            libtool    --version | head -1
+            cmake      --version | head -n 1
+            make       --version | head -n 1
+            autoconf   --version | head -n 1
+            automake   --version | head -n 1
+            libtool    --version | head -n 1
             pkg-config --version
-            gcc        --version | head -1
+            gcc        --version | head -n 1
             python3    --version
           '
 
