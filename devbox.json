@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "packages": [
+    "cmake@4.1.2",
+    "gnumake@4.4.1",
+    "autoconf@2.73",
+    "automake@1.18.1",
+    "libtool@2.5.4",
+    "pkg-config@0.29.2",
+    "gcc@15.2.0",
+    "python3@3.12.8"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'libmicrohttpd-ws devbox shell ready'"
+    ],
+    "scripts": {
+      "configure": "cmake -S . -B build",
+      "build": "cmake --build build -j",
+      "clean": "rm -rf build"
+    }
+  }
+}
