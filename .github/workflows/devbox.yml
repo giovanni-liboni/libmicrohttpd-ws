@@ -23,7 +23,7 @@ jobs:
 
       - name: report tool versions
         run: |
-          set -euo pipefail
+          set -eu
           devbox run -- cmake      --version | head -n 1
           devbox run -- make       --version | head -n 1
           devbox run -- autoconf   --version | head -n 1
