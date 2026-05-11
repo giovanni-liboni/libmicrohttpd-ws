@@ -1,0 +1,43 @@
+name: devbox
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  verify-env:
+    name: verify devbox env (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: install devbox
+        uses: jetify-com/devbox-install-action@v0.15.0
+        with:
+          enable-cache: true
+
+      - name: report tool versions
+        run: |
+          set -eu
+          devbox run -- cmake      --version | head -n 1
+          devbox run -- make       --version | head -n 1
+          devbox run -- autoconf   --version | head -n 1
+          devbox run -- automake   --version | head -n 1
+          devbox run -- libtool    --version | head -n 1
+          devbox run -- pkg-config --version
+          devbox run -- gcc        --version | head -n 1
+          devbox run -- python3    --version
+
+      - name: assert lockfile is up to date
+        run: |
+          devbox install
+          if ! git diff --quiet -- devbox.lock; then
+            echo "::error::devbox.lock is out of sync with devbox.json"
+            git --no-pager diff -- devbox.lock
+            exit 1
+          fi
